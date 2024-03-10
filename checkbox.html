@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckBox</title>
+    <style>
+        table {border: solid 0.5px;}
+        th {border: solid 0.5px;}
+        tr {border: solid 0.5px;}
+        td {border: solid 0.5px;}
+    </style>
+</head>
+<body>
+    <h1>외래환자 설문조사</h1>
+
+    <hr>
+
+    <h2>1. 병원을 선택하신 이유는 무엇입니까?</h2>
+    <form action="/chb" method="post">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="1_1" id="flexCheckDefault" name="checkbox1_1">
+            <label class="form-check-label" for="flexCheckDefault">
+              지인권유
+            </label>
+            <input class="form-check-input" type="checkbox" value="1_2" id="flexCheckDefault" name="checkbox1_2">
+            <label class="form-check-label" for="flexCheckDefault">
+              전문병원
+            </label>
+            <input class="form-check-input" type="checkbox" value="1_3" id="flexCheckDefault" name="checkbox1_3">
+            <label class="form-check-label" for="flexCheckDefault">
+              신속한 진단과 치료
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="1_4" id="flexCheckDefault" name="checkbox1_4">
+            <label class="form-check-label" for="flexCheckDefault">
+              우수한 의료진
+            </label>
+            <input class="form-check-input" type="checkbox" value="1_5" id="flexCheckDefault" name="checkbox1_5">
+            <label class="form-check-label" for="flexCheckDefault">
+              병원의 명성
+            </label>
+            <input class="form-check-input" type="checkbox" value="1_6" id="flexCheckDefault" name="checkbox1_6">
+            <label class="form-check-label" for="flexCheckDefault">
+              병원시설과 친절한 서비스
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="1_7" id="flexCheckDefault" name="checkbox1_7">
+            <label class="form-check-label" for="flexCheckDefault">
+              가까운 거리
+            </label>
+            <input class="form-check-input" type="checkbox" value="1_8" id="flexCheckDefault" name="checkbox1_8">
+            <label class="form-check-label" for="flexCheckDefault">
+              비용
+            </label>
+            <input class="form-check-input" type="checkbox" value="1_9" id="flexCheckDefault" name="checkbox1_9">
+            <label class="form-check-label" for="flexCheckDefault">
+              기타
+            </label>
+        </div>
+
+        <hr>
+        <h2>2. 병원 외래 서비스의 만족도 정도에 관한 질문입니다. 만족하신 정도를 체크 해주세요.</h2>
+        <table class="tg" style="border: solid 0.5px;">
+        <tr>
+            <th class="tg-0lax" colspan="2">질문</th>
+            <th class="tg-0lax">매우만족</th>
+            <th class="tg-0lax">만족</th>
+            <th class="tg-0lax">보통</th>
+            <th class="tg-0lax">불만족</th>
+            <th class="tg-0lax">매우불만족</th>
+        </tr>    
+        <tr>
+            <td class="tg-0lax" rowspan="10">병원의 시설과 환경</td>
+            <td class="tg-0lax">교통의 편리성</td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_1" id="flexCheckDefault" name="checkbox2_1_1"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_2" id="flexCheckDefault" name="checkbox2_1_2"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_3" id="flexCheckDefault" name="checkbox2_1_3"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_4" id="flexCheckDefault" name="checkbox2_1_4"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_5" id="flexCheckDefault" name="checkbox2_1_5"></td>
+        </tr>
+        <tr>
+            <td class="tg-0lax">전반적 청결상태</td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_6" id="flexCheckDefault" name="checkbox2_1_6"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_7" id="flexCheckDefault" name="checkbox2_1_7"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_8" id="flexCheckDefault" name="checkbox2_1_8"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_9" id="flexCheckDefault" name="checkbox2_1_9"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_10" id="flexCheckDefault" name="checkbox2_1_10"></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">병원 내부 환기,냉온방 상태</td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_11" id="flexCheckDefault" name="checkbox2_1_11"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_12" id="flexCheckDefault" name="checkbox2_1_12"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_13" id="flexCheckDefault" name="checkbox2_1_13"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_14" id="flexCheckDefault" name="checkbox2_1_14"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_15" id="flexCheckDefault" name="checkbox2_1_15"></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">병원시설 위치 접근성 (안내,표지판 등)</td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_16" id="flexCheckDefault" name="checkbox2_1_16"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_17" id="flexCheckDefault" name="checkbox2_1_17"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_18" id="flexCheckDefault" name="checkbox2_1_18"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_19" id="flexCheckDefault" name="checkbox2_1_19"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_20" id="flexCheckDefault" name="checkbox2_1_20"></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">진료 대기실 청결</td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_21" id="flexCheckDefault" name="checkbox2_1_21"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_22" id="flexCheckDefault" name="checkbox2_1_22"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_23" id="flexCheckDefault" name="checkbox2_1_23"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_24" id="flexCheckDefault" name="checkbox2_1_24"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_25" id="flexCheckDefault" name="checkbox2_1_25"></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">화장실 청결상태</td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_26" id="flexCheckDefault" name="checkbox2_1_26"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_27" id="flexCheckDefault" name="checkbox2_1_27"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_28" id="flexCheckDefault" name="checkbox2_1_28"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_29" id="flexCheckDefault" name="checkbox2_1_29"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_30" id="flexCheckDefault" name="checkbox2_1_30"></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">화장실 이용 편리성</td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_31" id="flexCheckDefault" name="checkbox2_1_31"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_32" id="flexCheckDefault" name="checkbox2_1_32"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_33" id="flexCheckDefault" name="checkbox2_1_33"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_34" id="flexCheckDefault" name="checkbox2_1_34"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_35" id="flexCheckDefault" name="checkbox2_1_35"></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">매점 필요 상품 구비</td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_36" id="flexCheckDefault" name="checkbox2_1_36"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_37" id="flexCheckDefault" name="checkbox2_1_37"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_38" id="flexCheckDefault" name="checkbox2_1_38"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_39" id="flexCheckDefault" name="checkbox2_1_39"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_40" id="flexCheckDefault" name="checkbox2_1_40"></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">주차시설 이용 편리성</td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_41" id="flexCheckDefault" name="checkbox2_1_41"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_42" id="flexCheckDefault" name="checkbox2_1_42"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_43" id="flexCheckDefault" name="checkbox2_1_43"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_44" id="flexCheckDefault" name="checkbox2_1_44"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_45" id="flexCheckDefault" name="checkbox2_1_45"></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">전반적인 시설 만족</td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_46" id="flexCheckDefault" name="checkbox2_1_46"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_47" id="flexCheckDefault" name="checkbox2_1_47"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_48" id="flexCheckDefault" name="checkbox2_1_48"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_49" id="flexCheckDefault" name="checkbox2_1_49"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_1_50" id="flexCheckDefault" name="checkbox2_1_50"></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax" rowspan="7">병원 이용 절차의 편리성</td>
+            <td class="tg-0lax">진료 예약시간 환자 편의제공</td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_1" id="flexCheckDefault" name="checkbox2_2_1"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_2" id="flexCheckDefault" name="checkbox2_2_2"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_3" id="flexCheckDefault" name="checkbox2_2_3"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_4" id="flexCheckDefault" name="checkbox2_2_4"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_5" id="flexCheckDefault" name="checkbox2_2_5"></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">진료 접수 예약 절차 간편성</td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_6" id="flexCheckDefault" name="checkbox2_2_6"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_7" id="flexCheckDefault" name="checkbox2_2_7"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_8" id="flexCheckDefault" name="checkbox2_2_8"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_9" id="flexCheckDefault" name="checkbox2_2_9"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_10" id="flexCheckDefault" name="checkbox2_2_10"></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">외래 진료예약절차(전화예약 등) 편의</td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_11" id="flexCheckDefault" name="checkbox2_2_11"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_12" id="flexCheckDefault" name="checkbox2_2_12"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_13" id="flexCheckDefault" name="checkbox2_2_13"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_14" id="flexCheckDefault" name="checkbox2_2_14"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_15" id="flexCheckDefault" name="checkbox2_2_15"></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">수납절차 간편성</td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_16" id="flexCheckDefault" name="checkbox2_2_16"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_17" id="flexCheckDefault" name="checkbox2_2_17"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_18" id="flexCheckDefault" name="checkbox2_2_18"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_19" id="flexCheckDefault" name="checkbox2_2_19"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_20" id="flexCheckDefault" name="checkbox2_2_20"></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">진료대기 시간 만족</td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_21" id="flexCheckDefault" name="checkbox2_2_21"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_22" id="flexCheckDefault" name="checkbox2_2_22"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_23" id="flexCheckDefault" name="checkbox2_2_23"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_24" id="flexCheckDefault" name="checkbox2_2_24"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_25" id="flexCheckDefault" name="checkbox2_2_25"></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">예약된 외래 진료시간 준수</td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_26" id="flexCheckDefault" name="checkbox2_2_26"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_27" id="flexCheckDefault" name="checkbox2_2_27"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_28" id="flexCheckDefault" name="checkbox2_2_28"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_29" id="flexCheckDefault" name="checkbox2_2_29"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_30" id="flexCheckDefault" name="checkbox2_2_30"></td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">30분이상 늦어진 이유에 대한 안내</td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_31" id="flexCheckDefault" name="checkbox2_2_31"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_32" id="flexCheckDefault" name="checkbox2_2_32"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_33" id="flexCheckDefault" name="checkbox2_2_33"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_34" id="flexCheckDefault" name="checkbox2_2_34"></td>
+            <td class="tg-0lax"><input class="form-check-input" type="checkbox" value="2_2_35" id="flexCheckDefault" name="checkbox2_2_35"></td>
+          </tr>
+        </table>
+        <button type="submit">제출</button>
+    </form>
+</body>
+</html>
